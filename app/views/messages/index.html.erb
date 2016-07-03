@@ -18,4 +18,8 @@
 	<p> <%= m.text %> </p>
 	<p> <%= m.author %> </p>
 	<p> <%= time_ago_in_words(m.created_at) %> </p>
+	<p> <%= link_to 'Destroy', message_path(m),
+      method: :delete,
+      data: { confirm: 'You want to do this?' } %>
+  </p>
 <% end %>
