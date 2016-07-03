@@ -15,5 +15,5 @@ feature 'Viewing messages' do
     expect(page).to have_content(message.author)
   end
 
-  let(:message) { create :message, text: 'first thing is first, i am the realist', author: 'Lola'}
+  let(:message)  { create :message, text: 'first thing is first, i am the realist', author: 'Lola'}
 end
