@@ -8,6 +8,8 @@ To run the app locally:
 * `git clone git@github.com:damzcodes/HBSWorkSample.git`
 * `cd HBSWorkSample`
 * `bundle install`
+* `rails s`
+* Then visit 'localhost:3000' in your web browser
 
 To run the tests
 
