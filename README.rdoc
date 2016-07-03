@@ -1,28 +1,17 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an app that allows users to create and delete guestbook entries.
 
-Things you may want to cover:
+To run the app locally:
 
-* Ruby version
+* Enter your terminal
+* `git clone git@github.com:damzcodes/HBSWorkSample.git`
+* `cd HBSWorkSample`
+* `bundle install`
 
-* System dependencies
+To run the tests
 
-* Configuration
+* Enter your terminal
+* `rspec`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+To read an article on keeping code DRY please open the 'Keep_it_DRY' markdown file.
