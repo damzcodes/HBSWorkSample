@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :message do
-    message 'A message'
+    text 'A message'
     author 'Lola'
   end
 end
