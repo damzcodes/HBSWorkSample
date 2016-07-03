@@ -1,13 +1,12 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.5.2'
 gem 'sqlite3'
 gem 'jquery-rails'
-gem 'rubocop', '~> 0.41.1', require: false
+gem 'rubocop', '~> 0.41.1'
 
 group :test do
-  gem 'brakeman'                  # Always latest
+  gem 'brakeman'
   gem 'cane',                     '2.6.2'
   gem 'capybara',                 '2.4.1'
   gem 'database_cleaner',         '1.5.1'
@@ -18,6 +17,7 @@ group :test do
   gem 'rspec',                    '3.2.0'
   gem 'scss-lint',                '~> 0.37.0'
   gem 'tailor',                   '1.4.1'
+  gem 'shoulda-matchers'
 end
 
 group :development do

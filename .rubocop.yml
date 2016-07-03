@@ -1,0 +1,19 @@
+inherit_from: .bundle/gems/rubocop-0.41.1/config/default.yml
+
+AllCops:
+  Include:
+    - '**/models/*.rb'
+    - '**/controllers/*.rb'
+    - '**/views/*.rb'
+  Exclude:
+    - 'spec/*.rb'
+    - 'spec/support/*.rb'
+    - 'config/**/*.rb'
+    - 'db/**/*.rb'
+    - 'bin/**'
+
+Documentation:
+  Enabled: false
+  
+Metrics/LineLength:
+  Max: 99
