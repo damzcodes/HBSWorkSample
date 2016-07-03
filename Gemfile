@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5.2'
 gem 'sqlite3'
 gem 'jquery-rails'
+gem 'rubocop', '~> 0.41.1', require: false
 
 group :test do
   gem 'brakeman'                  # Always latest
