@@ -1,4 +1,4 @@
-<h1> Messages </h1>
+<h1> Guestbook </h1>
 
 <%= form_for @message do |f| %>
   <div>
@@ -8,18 +8,21 @@
   </div>
   <div>
     <h3>Author</h3>
-    <%= f.text_field :author%>
+    <%= f.text_field :author %>
     <%= @message.errors[:author].join(",") %> 
   </div>
   <%= f.submit "Create" %>
 <% end %>
 
+<hr>
+
 <%= @messages.each do | m | %>
 	<p> <%= m.text %> </p>
 	<p> <%= m.author %> </p>
-	<p> <%= time_ago_in_words(m.created_at) %> </p>
+	<p> <%= time_ago_in_words(m.created_at) %> ago </p>
 	<p> <%= link_to 'Destroy', message_path(m),
       method: :delete,
       data: { confirm: 'You want to do this?' } %>
   </p>
+  <hr>
 <% end %>

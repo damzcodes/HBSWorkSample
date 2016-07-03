@@ -6,14 +6,16 @@ class MessagesController < ApplicationController
 	end
 
 
-	# def create
- #    @message = Message.create!(message_params)
- #    if @message.save
- #      redirect_to root_path
- #    else
- #      render 'index'
- #    end
- #  end
+	def create
+    @message = Message.create!(message_params)
+	  respond_to do |format|
+	 		if @message.save
+	      format.html  { redirect_to messages_path, notice: 'Thank You For Signing!' }
+	    else
+	      render 'index'
+	    end
+	  end
+  end
 
   def destroy
 	  @message = Message.find(params[:id])
