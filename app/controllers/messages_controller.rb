@@ -12,6 +12,7 @@ class MessagesController < ApplicationController
           redirect_to messages_path, notice: 'Thank You For Signing!'
         end
       else
+        binding.pry
         render 'index'
       end
     end

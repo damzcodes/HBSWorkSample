@@ -26,10 +26,12 @@ feature 'Authorised user submits link' do
     fill_in :message_text, with: ''
     fill_in :message_author, with: 'Tracy'
     click_button 'Create'
+    binding.pry
+    puts 1
   end
 
   def then_the_form_should_be_invalid
-    expect(page).to have_content('Please fill out this field')
+    expect(page).to have_content('can/t be blank.')
   end
 
   let(:message) { create :message, text: 'first thing is first, i am the realist', author: 'Lola' }

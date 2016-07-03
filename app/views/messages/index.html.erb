@@ -3,12 +3,12 @@
 <%= form_for @message do |f| %>
   <div>
     <h3>Text</h3>
-    <%= f.text_field :text, required: true %>
+    <%= f.text_field :text %>
     <%= @message.errors[:text].join(",") %> 
   </div>
   <div>
     <h3>Author</h3>
-    <%= f.text_field :author, required: true %>
+    <%= f.text_field :author %>
     <%= @message.errors[:author].join(",") %> 
   </div>
   <%= f.submit "Create" %>
