@@ -9,11 +9,11 @@ To run the app locally:
 * `cd HBSWorkSample`
 * `bundle install`
 * `rails s`
-* Then visit 'localhost:3000' in your web browser
+* Then visit **localhost:3000** in your web browser
 
 To run the tests
 
 * Enter your terminal
 * `rspec`
 
-To read an article on keeping code DRY please open the 'Keep_it_DRY' markdown file.
+To read an article on keeping code DRY please open the **Keep it DRY** markdown file.
