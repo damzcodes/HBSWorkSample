@@ -5,16 +5,11 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Message.create!(message_params)
-    respond_to do |format|
-      if @message.save
-        format.html do
-          redirect_to messages_path, notice: 'Thank You For Signing!'
-        end
-      else
-        binding.pry
-        render 'index'
-      end
+    @message = Message.new(message_params)
+    if @message.save
+      redirect_to messages_path, notice: 'Thank You For Signing!'
+    else
+      render 'new'
     end
   end
 
