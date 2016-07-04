@@ -13,6 +13,7 @@ feature 'User deletes entry' do
   def then_the_message_should_be_deleted
     expect(page).not_to have_content(message.text)
     expect(page).not_to have_content(message.author)
+    expect(page).to have_content("Your message has been deleted!")
   end
   let(:message) { create :message, text: 'first thing is first, i am the realist', author: 'Lola' }
 end
