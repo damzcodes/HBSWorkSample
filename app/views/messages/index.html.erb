@@ -16,7 +16,7 @@
 
 <hr>
 
-<%= @messages.each do | m | %>
+<% @messages.each do | m | %>
 	<p> <%= m.text %> </p>
 	<p> <%= m.author %> </p>
 	<p> <%= time_ago_in_words(m.created_at) %> ago </p>
