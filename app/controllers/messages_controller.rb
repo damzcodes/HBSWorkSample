@@ -15,14 +15,8 @@ class MessagesController < ApplicationController
 
   def destroy
     @message = Message.find(params[:id])
-    respond_to do |format|
-      if @message.destroy
-        format.html do
-          redirect_to messages_path, notice: 'Your message has been deleted!'
-        end
-      else
-        redirect_to messages_path
-      end
+    if @message.destroy
+      redirect_to messages_path, notice: 'Your message has been deleted!'
     end
   end
 

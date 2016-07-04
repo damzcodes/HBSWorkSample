@@ -4,12 +4,10 @@
   <div>
     <h3>Text</h3>
     <%= f.text_field :text %>
-    <%= @message.errors[:text].join(",") %>
   </div>
   <div>
     <h3>Author</h3>
     <%= f.text_field :author %>
-    <%= @message.errors[:author].join(",") %>
   </div>
   <%= f.submit "Create" %>
 <% end %>
@@ -20,7 +18,7 @@
 	<p> <%= m.text %> </p>
 	<p> <%= m.author %> </p>
 	<p> <%= time_ago_in_words(m.created_at) %> ago </p>
-	<button> <%= link_to 'Destroy', message_path(m),
+	<button> <%= link_to 'Delete', message_path(m),
       method: :delete,
       data: { confirm: 'You want to do this?' } %>
   </button>

@@ -1,4 +1,3 @@
 class Message < ActiveRecord::Base
-  validates :text, presence: true
-  validates :author, presence: true
+  validates :text, :author, presence: true
 end

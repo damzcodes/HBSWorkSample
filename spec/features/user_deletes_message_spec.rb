@@ -7,7 +7,7 @@ feature 'User deletes entry' do
   def when_an_authorised_user_deletes_an_entry
     message
     visit root_path
-    click_link('Destroy')
+    click_link('Delete')
   end
 
   def then_the_message_should_be_deleted
