@@ -1,6 +1,6 @@
 # Keep it DRY (_sometimes_)
 
-DRY is a methodology of working while programming, it stands for _Don't Repeat Yourself_. When learning to code, you're taught this principal as something to follow religiously, and for good reason. Repetition is tedious for you, can be confusing for people reading your code, but most importantly it can potentially cause performance issues in your app or could be more insidious in nature and lead to things being overwritten or reset unintentionally, which as you can imagine, would be pretty disastrous.
+DRY is a methodology of working while programming, it stands for _Don't Repeat Yourself_. When learning to code, you're taught this principal as something to follow religiously, and for good reason. Repetition is tedious for you, can be confusing for people reading your code, but most importantly it can potentially cause performance issues in your app or could be more insidious in nature and lead to things being overwritten or reset unintentionally, which, as you can imagine, would be pretty disastrous.
 
 ## So, How Do We DRY Up Wet Code?
 
@@ -74,7 +74,7 @@ This is clear if you’re just reading the CSS file. Immediately you can see wha
 
 As you can see all the rules that were repeated before have now been moved into their own definitions and are a lot more flexible as they can be applied to any element. A good place to see this kind of abstraction in full force the bootstrap source code, which has declarations like `.text-center { text-align: center }` which is applied to any text element that needs to be centered. We could also easily go futher and have several background-colour classes that describe the desired background-colour. On larger site, this may leave your HTML looking a bit bloated, however bloated HTML doesn't have the same kind of performance defects as bloated CSS.
 
-## That's Awesome, Let's DRY It _All_
+## That's Awesome! Let's DRY It _All_
 
 Not so fast. There are some cases where you would want to keep things as wet as possible. One of these instances is in the case of tests. When writing tests, wet really is best. Let's look at an example, assuming I have three separate tests that look like this:
 
@@ -147,7 +147,7 @@ Not so fast. There are some cases where you would want to keep things as wet as 
 
 ```
 
-In each test I’m creating the link and I’m visiting the `root_path` so this bit of code below is repeated three times:
+In each test I’m creating the link and I’m visiting the `root_path` so the bit of code below is repeated three times:
 
 ```ruby
 
