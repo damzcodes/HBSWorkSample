@@ -1,4 +1,4 @@
-feature 'Authorised user submits link' do
+feature 'Authorised user submits message' do
   scenario 'a user submits a message' do
     when_an_authorised_user_submits_a_message
     then_they_should_be_able_to_see_the_message
